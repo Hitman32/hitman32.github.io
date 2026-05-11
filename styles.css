@@ -96,8 +96,8 @@ a {
   align-items: center;
   padding: clamp(72px, 10vw, 132px) clamp(20px, 5vw, 72px);
   background:
-    linear-gradient(90deg, rgba(19, 36, 44, 0.94), rgba(19, 36, 44, 0.62) 48%, rgba(19, 36, 44, 0.12)),
-    url("assets/site-visual.png") center / cover no-repeat;
+    linear-gradient(90deg, rgba(19, 36, 44, 0.9), rgba(19, 36, 44, 0.55) 46%, rgba(19, 36, 44, 0.08)),
+    url("assets/coast-background.jpg") center / cover no-repeat;
   color: #fffaf0;
 }
 
@@ -338,8 +338,8 @@ h3 {
   .hero {
     min-height: min(680px, calc(100svh - 138px));
     background:
-      linear-gradient(180deg, rgba(19, 36, 44, 0.96), rgba(19, 36, 44, 0.62)),
-      url("assets/site-visual.png") center / cover no-repeat;
+      linear-gradient(180deg, rgba(19, 36, 44, 0.92), rgba(19, 36, 44, 0.5)),
+      url("assets/coast-background.jpg") center / cover no-repeat;
   }
 
   .card-grid,
