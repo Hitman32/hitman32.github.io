@@ -116,17 +116,20 @@ a {
 
 .hero-apps {
   display: grid;
+  width: min(100%, 650px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   justify-items: center;
+  gap: clamp(18px, 3vw, 34px);
   min-width: 0;
 }
 
-.hero-phone-row {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: min(100%, 620px);
-  min-height: 455px;
-  gap: clamp(16px, 3vw, 34px);
+.hero-app-column {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  width: min(100%, 260px);
+  gap: 18px;
 }
 
 .eyebrow {
@@ -271,24 +274,10 @@ h3 {
   border-radius: 21px;
 }
 
-.hero-phone-art {
-  transform: translateY(-26px);
-}
-
-.hero-phone-health {
-  transform: translateY(18px);
-}
-
-.hero-downloads {
-  display: grid;
-  width: min(100%, 640px);
-  grid-template-columns: minmax(150px, 0.8fr) minmax(240px, 1fr);
-  gap: 14px;
-  margin-top: 24px;
-}
-
 .download-set {
   min-width: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .download-set span {
@@ -327,6 +316,9 @@ h3 {
 
 .store-badges.compact-badges {
   margin-top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .support-overview {
@@ -489,16 +481,8 @@ h3 {
   }
 
   .hero-apps {
-    justify-items: start;
-  }
-
-  .hero-phone-row {
-    justify-content: flex-start;
-    min-height: 365px;
-  }
-
-  .hero-downloads {
-    grid-template-columns: 1fr;
+    width: min(100%, 560px);
+    justify-items: center;
   }
 
   .card-grid,
@@ -522,9 +506,13 @@ h3 {
     padding-bottom: 70px;
   }
 
-  .hero-phone-row {
-    min-height: 308px;
-    gap: 10px;
+  .hero-apps {
+    gap: 12px;
+  }
+
+  .hero-app-column {
+    width: 100%;
+    gap: 12px;
   }
 
   .hero-phone {
@@ -542,14 +530,6 @@ h3 {
 
   .hero-phone img {
     border-radius: 17px;
-  }
-
-  .hero-phone-art {
-    transform: translateY(-12px);
-  }
-
-  .hero-phone-health {
-    transform: translateY(16px);
   }
 
   .hero-actions {
