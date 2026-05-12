@@ -1,4 +1,4 @@
-# Hitman32 Apps
+# Brimst32 Apps
 
 Static GitHub Pages site for app support, privacy notes, and contact information.
 
